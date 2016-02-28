@@ -1,0 +1,14 @@
+<h1>{{appSettings.title}}</h1>
+<!-- title, content, image, date  -->
+<section>
+
+	<div ng-repeat="person in tIndexCtrl.people | filter: treeIndexFilter | orderBy:tIndexCtrl.sortBy:tIndexCtrl.reverse">
+    
+      <h2><a href="#/people/{{person.id}}">{{person.name}}</a></h2>
+			<p>{{person.gender}}</p>
+      <p>{{person.species}}</p>
+      <p>{{person.homeworld}}</p>
+			<a href="#/people/{{person.id}}">Show Homeworld Details</a> <!-- homeworld show -->
+	</div>
+
+</section>
