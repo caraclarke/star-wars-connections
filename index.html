@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="internetHistoryApp">
+<html ng-app="starWarsApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +7,28 @@
     <title>Star Wars</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style/fam_tree.css">
     <link rel="stylesheet" type="text/css" src="style/main_style.css">
   </head>
   <body>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <div ng-view></div>
+
+  	<!-- jQuery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<!-- Bootstrap -->
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- npm angular -->
-    <script src="node_modules/angular/angular.js"></script>
+  	<!-- bower angular -->
+  	<script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
-    <!-- xyz swapi ? -->
-    <!-- js -->
-    <script src="js/app.js"></script>
-    
+  	<!-- Timeline jQuery -->
+  	<script src="js/family-tree.js"></script>
+  	<!-- js -->
+  	<script src="js/app.js"></script>
+  	<script src='js/services/values.js'></script>
+  	<!-- Factories -->
+    <script src='js/services/treeFactory.js'></script>
+  	<!-- Controllers -->
+    <script src='js/controllers/treeController.js'></script>
+    <script src='js/controllers/personShowController.js'></script>
   </body>
-</html>
+  </html>
