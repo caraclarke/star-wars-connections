@@ -14,7 +14,7 @@
 			personFactory.getPeople()
 			.then(function(result) {
 			  vm.people = result.data.results;
-				vm.doColor(vm.people);
+				vm.showPersonPage(vm.people);
 			}, function(data, status, headers, config) {
 				console.log('error from personIndexController');
         console.error(status);
@@ -26,7 +26,7 @@
 			vm.reverse = !vm.reverse;
 		};
 		
-		vm.doColor = function(arr) {
+		vm.showPersonPage = function(arr) {
 			console.log('called');
 			for (var i = 0; i < vm.people.length; i++) {
 				var url = document.createElement('a');
