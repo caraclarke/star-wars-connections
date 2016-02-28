@@ -1,0 +1,13 @@
+<h1>{{appSettings.title}}</h1>
+<!-- title, content, image, date  -->
+<section>
+
+	<div ng-repeat="planet in planetIndexCtrl.planets | filter: planetIndexFilter | orderBy:planetIndexCtrl.sortBy:planetIndexCtrl.reverse">
+    
+      <h2>{{planet.name}}</h2>
+			<p>{{planet.climate}}</p>
+      <p>{{planet.population}}</p>
+      
+	</div>
+
+</section>

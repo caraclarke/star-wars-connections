@@ -15,13 +15,13 @@
 				templateUrl: 'js/views/personshowView.html'
 			})
 			.when('/planets/', {
-				controller: 'planetShowController',
+				controller: 'planetIndexController',
 				controllerAs: 'planetIndexCtrl',
 				templateUrl: 'js/views/planetIndexView.html'
 			})
 			.when('/planets/:planetId', {
 				controller: 'planetShowController',
-				controllerAs: 'planepShowCtrl',
+				controllerAs: 'planetShowCtrl',
 				templateUrl: 'js/views/planetShowView.html'
 			})
 		.otherwise({ redirectTo: '/' });
