@@ -1,0 +1,13 @@
+<h1>{{appSettings.title}}</h1>
+<!-- title, content, image, date  -->
+<section>
+
+	<div ng-repeat="vehicle in vIndexCtrl.vehicles | filter: vehicleIndexFilter | orderBy:vIndexCtrl.sortBy:vIndexCtrl.reverse">
+    
+      <h2>{{vehicle.name}}</h2>
+			<p>{{vehicle.model}}</p>
+      <p>{{vehicle.crew}}</p>
+      
+	</div>
+
+</section>
