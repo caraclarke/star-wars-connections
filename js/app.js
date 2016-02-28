@@ -24,6 +24,16 @@
 				controllerAs: 'planetShowCtrl',
 				templateUrl: 'js/views/planetShowView.html'
 			})
+			.when('/vehicles/', {
+				controller: 'vehicleIndexController',
+				controllerAs: 'vIndexCtrl',
+				templateUrl: 'js/views/vehicleIndexView.html'
+			})
+			.when('/vehicles/:vehicleId', {
+				controller: 'vehicleShowController',
+				controllerAs: 'vShowCtrl',
+				templateUrl: 'js/views/vehicleShowView.html'
+			})
 		.otherwise({ redirectTo: '/' });
 	});
 })();
