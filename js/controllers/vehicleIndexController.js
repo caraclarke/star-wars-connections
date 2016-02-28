@@ -14,7 +14,7 @@
 			vehicleFactory.getVehicles()
 			.then(function(result) {
 			  vm.vehicles = result.data.results;
-        console.log(result.data.results);
+        vm.showVehiclePage(vm.vehicles);
 			}, function(data, status, headers, config) {
 				console.log('error from vehicleIndexController');
         console.error(status);
@@ -24,6 +24,16 @@
 		vm.doSort = function(propName) {
 			vm.sortBy = propName;
 			vm.reverse = !vm.reverse;
+		};
+		
+		vm.showVehiclePage = function(arr) {
+			for (var i = 0; i < vm.vehicles.length; i++) {
+				var url = document.createElement('a');
+				url.href = vm.vehicles[i].url;
+				url.pathname = url.pathname.replace(/(\/api\/)/, '');
+				var newVehicleUrl = url.pathname;
+				vm.vehicles[i].url = newVehicleUrl;
+			}
 		};
 
 		init();
