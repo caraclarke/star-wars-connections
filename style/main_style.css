@@ -1,0 +1,23 @@
+body {
+  background-color: #263248;
+  color: #fff;
+}
+
+#wrapper {
+  padding: 25px;
+}
+
+.left {
+  float: left;
+  width: 30%;
+  margin: 5%;
+}
+
+.home-icon {
+  height: 250px;
+  width: auto;
+}
+
+.container h1 {
+  text-align: center;
+}
