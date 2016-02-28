@@ -27,7 +27,6 @@
 		};
 		
 		vm.showPersonPage = function(arr) {
-			console.log('called');
 			for (var i = 0; i < vm.people.length; i++) {
 				var url = document.createElement('a');
 				url.href = vm.people[i].url;
