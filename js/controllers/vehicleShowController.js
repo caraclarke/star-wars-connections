@@ -12,8 +12,6 @@
 		function init() {
 			vehicleFactory.show(vehicleId)
 			.then(function(result) {
-        console.log(result.data)
-        console.log(vehicleId);
 				vm.master = result.data;
 			}, function(data, status, headers, config) {
         console.log('error in vehicleShowController');

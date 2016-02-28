@@ -12,8 +12,6 @@
 		function init() {
 			planetFactory.show(planetId)
 			.then(function(result) {
-        console.log(result.data)
-        console.log(planetId);
 				vm.master = result.data;
 			}, function(data, status, headers, config) {
         console.log('error in planetShowController');

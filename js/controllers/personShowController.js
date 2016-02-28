@@ -14,8 +14,6 @@
 			personFactory.show(personId)
 			.then(function(result) {
 				vm.master = result.data;
-				console.log(result.data)
-				console.log(personId);
 			}, function(data, status, headers, config) {
         console.log('error in personShowController');
 				console.error(data, status);
