@@ -14,7 +14,7 @@
 			planetFactory.getPlanets()
 			.then(function(result) {
 			  vm.planets = result.data.results;
-				vm.showVehiclePage(vm.planets);
+				vm.showPlanetPage(vm.planets);
 			}, function(data, status, headers, config) {
 				console.log('error from planetIndexController');
         console.error(status);
@@ -26,7 +26,7 @@
 			vm.reverse = !vm.reverse;
 		};
 		
-		vm.showVehiclePage = function(arr) {
+		vm.showPlanetPage = function(arr) {
 			for (var i = 0; i < vm.planets.length; i++) {
 				var url = document.createElement('a');
 				url.href = vm.planets[i].url;
