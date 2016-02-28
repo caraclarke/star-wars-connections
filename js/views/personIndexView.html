@@ -2,7 +2,7 @@
 <!-- title, content, image, date  -->
 <section>
 
-	<div ng-repeat="person in tIndexCtrl.people | filter: treeIndexFilter | orderBy:tIndexCtrl.sortBy:tIndexCtrl.reverse">
+	<div ng-repeat="person in pIndexCtrl.people | filter: treeIndexFilter | orderBy:pIndexCtrl.sortBy:pIndexCtrl.reverse">
     
       <h2><a href="#/people/{{person.id}}">{{person.name}}</a></h2>
 			<p>{{person.gender}}</p>

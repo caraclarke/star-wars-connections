@@ -1,6 +1,6 @@
 (function personShowController() {
 
-	var PersonShowController = function(treeFactory, appSettings, $routeParams) {
+	var PersonShowController = function(personFactory, appSettings, $routeParams) {
 		var vm = this;
 		vm.appSettings = appSettings;
 		vm.sortBy = 'name';
@@ -11,9 +11,9 @@
 		vm.master = {};
 
 		function init() {
-			treeFactory.show(personId)
+			personFactory.show(personId)
 			.then(function(result) {
-        console.log(result.data);
+        console.log(result.data)
 				vm.master = result.data;
 			}, function(data, status, headers, config) {
         console.log('error in personShowController');
@@ -24,7 +24,7 @@
 		init();
 	}; // end personShowController
 
-		PersonShowController.$inject = ['treeFactory', 'appSettings', '$routeParams'];
+		PersonShowController.$inject = ['personFactory', 'appSettings', '$routeParams'];
 
 		angular.module('starWarsApp').controller('personShowController', PersonShowController);
 	})();

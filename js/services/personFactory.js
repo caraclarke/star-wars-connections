@@ -1,6 +1,6 @@
-(function treeFactory() {
+(function personFactory() {
 
-	var TreeFactory = function($http) {
+	var PersonFactory = function($http) {
 		var eventAPI = {};
 		var sa = 'http://swapi.co/api';
 
@@ -14,9 +14,9 @@
     };
     
 		return eventAPI;
-	}; // end treeFactory
+	}; // end personFactory
 
-	TreeFactory.$inject = ['$http'];
+	PersonFactory.$inject = ['$http'];
 
-	angular.module('starWarsApp').factory('treeFactory', TreeFactory);
+	angular.module('starWarsApp').factory('personFactory', PersonFactory);
 })();
