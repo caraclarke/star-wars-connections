@@ -4,7 +4,7 @@
 	starWarsApp.config(function($routeProvider, $httpProvider) {
 		// $httpProvider.defaults.withCredentials = true;
 		$routeProvider
-			.when('/', {
+			.when('/people/', {
 				controller: 'personIndexController',
 				controllerAs: 'pIndexCtrl',
 				templateUrl: 'js/views/personIndexView.html'
@@ -34,6 +34,7 @@
 				controllerAs: 'vShowCtrl',
 				templateUrl: 'js/views/vehicleShowView.html'
 			})
-		.otherwise({ redirectTo: '/' });
+		.otherwise({ // redirectTo: '/' }); 
+	});
 	});
 })();

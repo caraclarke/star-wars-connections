@@ -14,8 +14,7 @@
 			personFactory.getPeople()
 			.then(function(result) {
 			  vm.people = result.data.results;
-        console.log(result.data.results);
-				console.log(result.data.results[1]);
+				vm.doColor(vm.people);
 			}, function(data, status, headers, config) {
 				console.log('error from personIndexController');
         console.error(status);
@@ -25,6 +24,17 @@
 		vm.doSort = function(propName) {
 			vm.sortBy = propName;
 			vm.reverse = !vm.reverse;
+		};
+		
+		vm.doColor = function(arr) {
+			console.log('called');
+			for (var i = 0; i < vm.people.length; i++) {
+				var url = document.createElement('a');
+				url.href = vm.people[i].url;
+				 url.pathname = url.pathname.replace(/(\/api\/)/, '');
+				var newPersonUrl = url.pathname;
+				vm.people[i].url = newPersonUrl;
+			}
 		};
 
 		init();

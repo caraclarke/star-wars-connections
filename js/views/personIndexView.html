@@ -4,11 +4,11 @@
 
 	<div ng-repeat="person in pIndexCtrl.people | filter: personIndexFilter | orderBy:pIndexCtrl.sortBy:pIndexCtrl.reverse">
     
-      <h2><a href="#/people/{{person.id}}">{{person.name}}</a></h2>
+      <h2>{{person.name}}</h2>
 			<p>{{person.gender}}</p>
       <p>{{person.species}}</p>
       <p>{{person.homeworld}}</p>
-			<a href="#/people/{{person.id}}">Show Person Details</a>
+			<a id="showPerson" href="#{{person.url}}">Show Person Details</a>
 	</div>
 
 </section>
