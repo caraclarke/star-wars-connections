@@ -15,6 +15,7 @@
 			.then(function(result) {
 			  vm.people = result.data.results;
         console.log(result.data.results);
+				console.log(result.data.results[1]);
 			}, function(data, status, headers, config) {
 				console.log('error from personIndexController');
         console.error(status);
