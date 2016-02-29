@@ -1,8 +1,8 @@
 <h1>{{appSettings.title}}</h1>
 <!-- title, content, image, date  -->
-<section>
+<section class="col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0">
 
-	<div ng-repeat="vehicle in vIndexCtrl.vehicles | filter: vehicleIndexFilter | orderBy:vIndexCtrl.sortBy:vIndexCtrl.reverse">
+	<div class="col-md-4 col-sm-12" ng-repeat="vehicle in vIndexCtrl.vehicles | filter: vehicleIndexFilter | orderBy:vIndexCtrl.sortBy:vIndexCtrl.reverse">
     
       <h2>{{vehicle.name}}</h2>
 			<p>{{vehicle.model}}</p>
