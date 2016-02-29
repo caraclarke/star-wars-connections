@@ -7,6 +7,10 @@ body {
   color: #FF9800;
 }
 
+ .show-page h2 {
+   color: #FF9800;
+ }
+
 .index-page a {
   color: #7E8AA2;
 }
@@ -18,4 +22,12 @@ body {
 
 .container h1 {
   text-align: center;
+}
+
+h2 > strong {
+  color: #7E8AA2;
+}
+
+p > strong {
+  color: #7E8AA2;
 }
