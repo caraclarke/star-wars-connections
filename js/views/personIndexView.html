@@ -2,7 +2,7 @@
 <!-- title, content, image, date  -->
 <section class="col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0">
 
-	<div class="col-md-4 col-sm-12" ng-repeat="person in pIndexCtrl.people | filter: personIndexFilter | orderBy:pIndexCtrl.sortBy:pIndexCtrl.reverse">
+	<div class="col-md-4 col-sm-12 index-page" ng-repeat="person in pIndexCtrl.people | filter: personIndexFilter | orderBy:pIndexCtrl.sortBy:pIndexCtrl.reverse">
     
       <h2>{{person.name}}</h2>
 			<p>Gender: {{person.gender}}</p>

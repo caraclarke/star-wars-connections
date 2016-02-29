@@ -2,7 +2,7 @@
 <!-- title, content, image, date  -->
 <section class="col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0">
 
-	<div class="col-md-4 col-sm-12" ng-repeat="vehicle in vIndexCtrl.vehicles | filter: vehicleIndexFilter | orderBy:vIndexCtrl.sortBy:vIndexCtrl.reverse">
+	<div class="col-md-4 col-sm-12 index-page" ng-repeat="vehicle in vIndexCtrl.vehicles | filter: vehicleIndexFilter | orderBy:vIndexCtrl.sortBy:vIndexCtrl.reverse">
     
       <h2>{{vehicle.name}}</h2>
 			<p>Model: {{vehicle.model}}</p>

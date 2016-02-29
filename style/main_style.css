@@ -3,14 +3,12 @@ body {
   color: #fff;
 }
 
-#wrapper {
-  /*padding: 25px;*/
+.index-page h2 {
+  color: #FF9800;
 }
 
-.left {
-  float: left;
-  width: 30%;
-  margin: 5%;
+.index-page a {
+  color: #7E8AA2;
 }
 
 .home-icon {
