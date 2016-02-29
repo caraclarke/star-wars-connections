@@ -5,8 +5,8 @@
 	<div class="col-md-4 col-sm-12" ng-repeat="planet in planetIndexCtrl.planets | filter: planetIndexFilter | orderBy:planetIndexCtrl.sortBy:planetIndexCtrl.reverse">
     
       <h2>{{planet.name}}</h2>
-			<p>{{planet.climate}}</p>
-      <p>{{planet.population}}</p>
+			<p>Climate: {{planet.climate}}</p>
+      <p>Population: {{planet.population}}</p>
 			<a href="#{{planet.url}}">Show Planet Details</a>
       
 	</div>

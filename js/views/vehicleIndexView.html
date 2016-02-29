@@ -5,8 +5,8 @@
 	<div class="col-md-4 col-sm-12" ng-repeat="vehicle in vIndexCtrl.vehicles | filter: vehicleIndexFilter | orderBy:vIndexCtrl.sortBy:vIndexCtrl.reverse">
     
       <h2>{{vehicle.name}}</h2>
-			<p>{{vehicle.model}}</p>
-      <p>{{vehicle.crew}}</p>
+			<p>Model: {{vehicle.model}}</p>
+      <p>Crew Size: {{vehicle.crew}}</p>
       <a href="#{{vehicle.url}}">Show Vehicle Details</a>
 			
 	</div>
