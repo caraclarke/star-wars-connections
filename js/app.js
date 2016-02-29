@@ -2,7 +2,7 @@
 	var starWarsApp = angular.module('starWarsApp', ['ngRoute']);
 
 	starWarsApp.config(function($routeProvider, $httpProvider) {
-		$httpProvider.defaults.withCredentials = true;
+		// $httpProvider.defaults.withCredentials = true;
 		$routeProvider
 			.when('/', {
 				controller: '',
