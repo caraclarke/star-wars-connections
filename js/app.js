@@ -16,7 +16,7 @@
       .when('/people/:personId', {
 				controller: 'personShowController',
 				controllerAs: 'pShowCtrl',
-				templateUrl: 'js/views/personshowView.html'
+				templateUrl: 'js/views/personShowView.html'
 			})
 			.when('/planets/', {
 				controller: 'planetIndexController',
