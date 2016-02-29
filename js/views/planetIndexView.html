@@ -1,6 +1,8 @@
 <h1>{{appSettings.title}}</h1>
 <!-- title, content, image, date  -->
 <section class="col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0">
+	
+	<h5>Search by Name:  <input type="text" ng-model="planetIndexFilter.name"></h5>
 
 	<div class="col-md-4 col-sm-12 index-page" ng-repeat="planet in planetIndexCtrl.planets | filter: planetIndexFilter | orderBy:planetIndexCtrl.sortBy:planetIndexCtrl.reverse">
     

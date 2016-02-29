@@ -31,3 +31,7 @@ h2 > strong {
 p > strong {
   color: #7E8AA2;
 }
+
+input {
+  color: #000;
+}
