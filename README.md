@@ -10,3 +10,6 @@ This app allows users to view lists of Star Wars characters, vehicles and planet
 - HTML/CSS
 - Angular.js
 - JavaScript/jQuery
+
+##Plans
+As this project continues I plan on adding information about films, starships and species.
