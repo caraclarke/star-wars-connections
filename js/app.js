@@ -38,6 +38,16 @@
 				controllerAs: 'vShowCtrl',
 				templateUrl: 'js/views/vehicleShowView.html'
 			})
+			.when('/films/', {
+				controller: 'filmsIndexController',
+				controllerAs: 'fIndexCtrl',
+				templateUrl: 'js/views/filmIndexView.html'
+			})
+			.when('/films/:filmId', {
+				controller: 'filmsShowController',
+				controllerAs: 'fShowCtrl',
+				templateUrl: 'js/views/filmShowView.html'
+			})
 		.otherwise({ redirectTo: '/' }); 
 	});
 })();
