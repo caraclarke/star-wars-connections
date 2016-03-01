@@ -39,12 +39,12 @@
 				templateUrl: 'js/views/vehicleShowView.html'
 			})
 			.when('/films/', {
-				controller: 'filmsIndexController',
+				controller: 'filmIndexController',
 				controllerAs: 'fIndexCtrl',
 				templateUrl: 'js/views/filmIndexView.html'
 			})
 			.when('/films/:filmId', {
-				controller: 'filmsShowController',
+				controller: 'filmShowController',
 				controllerAs: 'fShowCtrl',
 				templateUrl: 'js/views/filmShowView.html'
 			})
