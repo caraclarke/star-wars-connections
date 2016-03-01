@@ -58,6 +58,16 @@
 				controllerAs: 'sShowCtrl',
 				templateUrl: 'js/views/speciesShowView.html'
 			})
+			.when('/starships/', {
+				controller: 'starshipIndexController',
+				controllerAs: 'starIndexCtrl',
+				templateUrl: 'js/views/starshipIndexView.html'
+			})
+			.when('/starships/:starshipId', {
+				controller: 'starshipShowController',
+				controllerAs: 'starShowCtrl',
+				templateUrl: 'js/views/starshipShowView.html'
+			})
 		.otherwise({ redirectTo: '/' }); 
 	});
 })();
