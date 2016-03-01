@@ -3,7 +3,7 @@
 	var FilmIndexController = function(filmFactory, appSettings) {
 		var vm = this;
 		vm.appSettings = appSettings;
-		vm.sortBy = 'name';
+		vm.sortBy = 'release_date';
 		vm.reverse = false;
 
 		vm.films = [];
