@@ -48,6 +48,16 @@
 				controllerAs: 'fShowCtrl',
 				templateUrl: 'js/views/filmShowView.html'
 			})
+			.when('/species/', {
+				controller: 'speciesIndexController',
+				controllerAs: 'sIndexCtrl',
+				templateUrl: 'js/views/speciesIndexView.html'
+			})
+			.when('/species/:alienId', {
+				controller: 'speciesShowController',
+				controllerAs: 'sShowCtrl',
+				templateUrl: 'js/views/speciesShowView.html'
+			})
 		.otherwise({ redirectTo: '/' }); 
 	});
 })();
