@@ -1,0 +1,16 @@
+<h1>{{appSettings.title}}</h1>
+<!-- title, content, image, date  -->
+<section class="col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0">
+	
+	<h5>Search by Name:  <input type="text" ng-model="filmIndexFilter.release_date"></h5>
+
+	<div class="col-md-4 col-sm-12 index-page" ng-repeat="film in fIndexCtrl.films | filter: filmIndexFilter | orderBy:fIndexCtrl.sortBy:fIndexCtrl.reverse">
+    
+      <h2>{{film.title}}</h2>
+			<p>Release Date: {{film.release_date}}</p>
+      <!-- <p>{{film.species}}</p>
+      <p>{{film.homeworld}}</p> -->
+			<a href="#{{film.url}}">Show Film Details</a>
+	</div>
+
+</section>
