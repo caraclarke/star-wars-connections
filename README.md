@@ -4,7 +4,7 @@
 
 Explore the Star Wars Universe
 
-This app allows users to view lists of Star Wars characters, vehicles and planets. They can search on pages for a specific planet, character or vehicle they might be looking for. They can click on an individual element and view even more information. The Star Wars data is compiled from a third party API called <a href="https://swapi.co/" target="_blank">SWAPI</a>.
+This app allows users to view lists of Star Wars characters, vehicles, planets, films, starships and species. They can search on pages for a specific planet, character or vehicle they might be looking for. They can click on an individual element and view even more information. The Star Wars data is compiled from a third party API called <a href="https://swapi.co/" target="_blank">SWAPI</a>.
 
 ##Technologies Used
 - HTML/CSS
@@ -12,4 +12,4 @@ This app allows users to view lists of Star Wars characters, vehicles and planet
 - JavaScript/jQuery
 
 ##Plans
-As this project continues I plan on adding information about films, starships and species.
+As this project continues I plan on adding connections between pages.
