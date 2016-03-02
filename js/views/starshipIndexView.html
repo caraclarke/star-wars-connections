@@ -1,16 +1,15 @@
 <h1>{{appSettings.title}}</h1>
 <!-- title, content, image, date  -->
-<section class="col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0">
+<section class="col-md-12 col-sm-12 col-sm-offset-0">
 	
 	<h5>Search by Name:  <input type="text" ng-model="starshipIndexFilter.name"></h5>
 
-	<div class="col-md-4 col-sm-12 index-page" ng-repeat="starship in starIndexCtrl.starships | filter: starshipIndexFilter | orderBy:starIndexCtrl.sortBy:starIndexCtrl.reverse">
+	<div class="col-md-5 col-md-offset-1 col-sm-12 index-page" ng-repeat="starship in starIndexCtrl.starships | filter: starshipIndexFilter | orderBy:starIndexCtrl.sortBy:starIndexCtrl.reverse">
     
-      <h2>{{starship.name}}</h2>
-			<p>Model: {{starship.model}}</p>
-      <p>Starship Class: {{starship.starship_class}}</p>
-      <a href="#{{starship.url}}">Show Starship Details</a>
-			
+		<h2>{{starship.name}}</h2>
+		<p>Model: {{starship.model}}</p>
+		<p>Starship Class: {{starship.starship_class}}</p>
+		<a href="#{{starship.url}}">Show Starship Details</a>
 	</div>
 
 </section>
