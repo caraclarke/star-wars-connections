@@ -20,6 +20,12 @@ body {
   width: auto;
 }
 
+.ship-icon {
+  width: 350px;
+  height: auto;
+  margin-top: 60px;
+}
+
 .container h1 {
   text-align: center;
 }
