@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="style/main_style.css">
 </head>
 <body>
-  
+
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -23,7 +23,7 @@
         </button>
         <a class="navbar-brand" href="#/">Star Wars Connections</a>
       </div>
-      
+
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -38,11 +38,11 @@
       </div> <!-- /.navbar-collapse -->
     </div> <!-- /.container-fluid -->
   </nav>
-  
+
   <div id="wrapper">
     <div ng-view></div>
   </div>
-  
+
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Bootstrap -->
@@ -50,11 +50,14 @@
   <!-- bower angular -->
   <script src="lib/angular.js"></script>
   <script src="lib/angular-route.js"></script>
-  <!-- Timeline jQuery -->
-  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react-dom.min.js"></script>
+  <script src="lib/ngReact.js"></script>
   <!-- js -->
   <script src="js/app.js"></script>
-  <script src='js/services/values.js'></script>
+  <script src="js/services/values.js"></script>
+  <!-- React compiled js -->
+  <script src="js/components/react-main.js"></script>
   <!-- Factories -->
   <script src='js/services/personFactory.js'></script>
   <script src='js/services/planetFactory.js'></script>

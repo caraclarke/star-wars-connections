@@ -1,0 +1,36 @@
+{
+  "name": "star-wars-connections",
+  "version": "1.0.0",
+  "description": "Star Wars React/Angular Practice App",
+  "main": "index.js",
+  "dependencies": {
+    "angular-route": "^1.5.0",
+    "angular": "^1.5.0",
+    "ne-swapi": "^0.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "watchify js/components/resident.jsx -v -t [ babelify --presets [ react ] ] -o js/components/react-main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caraclarke/star-wars-connections.git"
+  },
+  "author": "Cara Clarke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caraclarke/star-wars-connections/issues"
+  },
+  "homepage": "https://github.com/caraclarke/star-wars-connections#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "email-validator": "^1.0.4",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^2.0.0",
+    "reflux": "^0.4.0",
+    "watchify": "^3.7.0",
+    "whatwg-fetch": "^0.11.0"
+  }
+}

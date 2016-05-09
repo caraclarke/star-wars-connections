@@ -1,5 +1,5 @@
 (function starWarsApp() {
-	var starWarsApp = angular.module('starWarsApp', ['ngRoute']);
+	var starWarsApp = angular.module('starWarsApp', ['ngRoute', 'react']);
 
 	starWarsApp.config(function($routeProvider, $httpProvider) {
 		// $httpProvider.defaults.withCredentials = true;
@@ -68,6 +68,6 @@
 				controllerAs: 'starShowCtrl',
 				templateUrl: 'js/views/starshipShowView.html'
 			})
-		.otherwise({ redirectTo: '/' }); 
+		.otherwise({ redirectTo: '/' });
 	});
 })();
